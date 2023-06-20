@@ -1,6 +1,7 @@
-#include <stdio.h>
+import stdio
 
-int main() {
-    printf("_putchar\n");
-    return 0;
-}
+main():
+    stdio.print("_putchar\n")
+    return 0
+
+execute main
