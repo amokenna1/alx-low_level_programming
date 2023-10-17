@@ -7,11 +7,15 @@
  */
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int cnt = 0;
+	while (cnt >= 0)
 	{
-		putchar(*str);
-		str++;
+		if(str[cnt] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		_putchar(str[cnt]);
+		cnt++;
 	}
-	
-	putchar('\n');
 }
